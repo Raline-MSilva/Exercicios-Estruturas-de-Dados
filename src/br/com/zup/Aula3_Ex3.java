@@ -13,10 +13,10 @@ public class Aula3_Ex3 {
 
         double media = (nota1 + nota2) / 2;
 
-        if (media >= 7 & media <= 10){
+        if (media >= 7 & media < 10){
             System.out.println("Aprovado");
         }
-        else if (media < 7 & media <= 0 ){
+        else if (media < 7 & media >= 0 ){
             System.out.println("Reprovado");
         }
         else if (media == 10) {
