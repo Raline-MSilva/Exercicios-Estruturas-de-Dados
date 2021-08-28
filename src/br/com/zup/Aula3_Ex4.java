@@ -7,9 +7,10 @@ public class Aula3_Ex4 {
         Scanner leitor = new Scanner(System.in);
 
         //armazenando dados do usuario
-        System.out.println("Insira pot favor o seu salário: ");
+        System.out.println("Insira por favor o seu salário: ");
         double salarioAtual = leitor.nextDouble();
-        double valorDoAumento =0;
+        double percentualDoAumento = 0;
+        double valorDoAumento = 0;
         double novoSalario = valorDoAumento;
 
         if (salarioAtual > 0 & salarioAtual <= 280){
@@ -31,5 +32,8 @@ public class Aula3_Ex4 {
         else {
             System.out.println("Insira um valor válido");
         }
+        System.out.println("Salário antes do reajuste: " + salarioAtual);
+        System.out.println("O valor do seu aumento: " + percentualDoAumento * 100);
+        System.out.println("Salário após o aumento: " + novoSalario);
     }
 }
