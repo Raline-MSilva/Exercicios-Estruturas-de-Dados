@@ -34,7 +34,7 @@ public class Aula4_Ex1 {
             impostoDeRenda = salarioBruto * 0.2;
             System.out.println("Seu desconto no IR é de R$" + impostoDeRenda);
         }
-        // calculo
+        // calculando
         double inss = salarioBruto * 0.1;
         double fgts = 0.11;
         double totalDescontos = inss + impostoDeRenda;
