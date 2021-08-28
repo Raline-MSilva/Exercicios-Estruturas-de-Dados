@@ -11,7 +11,7 @@ public class Aula3_Ex4 {
         double salarioAtual = leitor.nextDouble();
         double percentualDoAumento = 0;
         double valorDoAumento = 0;
-        double novoSalario = valorDoAumento;
+        double novoSalario;
 
         if (salarioAtual > 0 & salarioAtual <= 280){
             System.out.println("Você recebeu aumento de 20%");
@@ -30,10 +30,16 @@ public class Aula3_Ex4 {
             novoSalario = salarioAtual * 0.05;
         }
         else {
-            System.out.println("Insira um valor válido");
+            System.out.println("Insira um salário maior que 0");
         }
-        System.out.println("Salário antes do reajuste: " + salarioAtual);
-        System.out.println("O valor do seu aumento: " + percentualDoAumento * 100);
-        System.out.println("Salário após o aumento: " + novoSalario);
+
+        valorDoAumento = salarioAtual * percentualDoAumento;
+        novoSalario = salarioAtual + valorDoAumento;
+
+        double valorEmPorcentagemDoAumento = (percentualDoAumento * 100);
+        System.out.println("O seu salário atual é de: R$ " + salarioAtual);
+        System.out.println("Você receberá " + valorEmPorcentagemDoAumento + "% de aumento");
+        System.out.println("O valor do seu aumento será de: R$ " + valorDoAumento);
+        System.out.println("O seu novo salário será de: R$ " + novoSalario);
     }
 }
