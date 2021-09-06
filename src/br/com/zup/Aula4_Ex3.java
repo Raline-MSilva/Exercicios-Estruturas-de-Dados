@@ -10,34 +10,30 @@ public class Aula4_Ex3 {
         int contadorDeRespostas = 0;
 
         System.out.println("Olá! Irei lhe fazer algumas perguntas");
-        System.out.println("Digite S para sim e N para não");
+        System.out.println("Digite s para sim e n para não");
 
         //usando a estrutura de decisao para o java contar as respostas
         System.out.println("Telefonou para a vítima?");
         String respostas = leitor.nextLine();
-        if (respostas.equals("S")) {
-            contadorDeRespostas = contadorDeRespostas + 1;
-        }
-
-        if (respostas.equals("S")){
+        if (respostas.equals("s")) {
             contadorDeRespostas = contadorDeRespostas + 1;
         }
         System.out.println("Esteve no local do crime?");
         respostas = leitor.nextLine();
 
-        if (respostas.equals("S")){
+        if (respostas.equals("s")){
             contadorDeRespostas = contadorDeRespostas + 1;
         }
         System.out.println("Mora perto da vítima?");
         respostas = leitor.nextLine();
 
-        if (respostas.equals("S")){
+        if (respostas.equals("s")){
             contadorDeRespostas = contadorDeRespostas + 1;
         }
         System.out.println("Devia para a vítima?");
         respostas = leitor.nextLine();
 
-        if (respostas.equals("S")){
+        if (respostas.equals("s")){
             contadorDeRespostas = contadorDeRespostas + 1;
         }
         System.out.println("Já trabalhou com a vítima?" );
@@ -47,7 +43,7 @@ public class Aula4_Ex3 {
         if (contadorDeRespostas == 2) {
             System.out.println("Suspeita");
         }
-        else if (contadorDeRespostas == 3 || contadorDeRespostas == 4) {
+        else if (contadorDeRespostas == 3 | contadorDeRespostas == 4) {
             System.out.println("Cúmplice");
         }
         else if (contadorDeRespostas == 5) {

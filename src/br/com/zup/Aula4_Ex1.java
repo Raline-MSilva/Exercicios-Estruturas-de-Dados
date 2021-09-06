@@ -42,11 +42,16 @@ public class Aula4_Ex1 {
 
         //Visualização da folha de pagamento
         System.out.println("Sua folha de pagamento");
-        System.out.println("Salário Bruto: 5 * 220 R$: " + salarioBruto);
-        System.out.println("- IR 5% R$: " + impostoDeRenda);
-        System.out.println(" - INSS 10% R$: " + inss);
-        System.out.println("FGTS 11% R$: " + salarioBruto * fgts);
-        System.out.println("Total de Descontos R$: " + totalDescontos);
-        System.out.println("Salário Liquído R$: " + salarioLiquido);
+        System.out.printf("\tSalário Bruto: (%.0f * %.0f)\t: R$ %2.f \n", salarioBruto, valorDaHora,qntHorasTrabalhada);
+        System.out.println();
+        System.out.printf("\t(-) IR  (%s%%)\t\t\t\t: R& %s\n",impostoDeRenda);
+        System.out.println();
+        System.out.printf("\t(-) INSS  (%%%)\t\t\t\t: R$ %s\n", inss);
+        System.out.println();
+        System.out.printf("\tFGTS (%%%)\t\t\t\t\t: R$ %s\n", salarioBruto * fgts);
+        System.out.println();
+        System.out.printf("\tTotal de Descontos\t\t\t\t\t: R$ %s\n", totalDescontos);
+        System.out.println();
+        System.out.printf("\tSalário Liquído\t\t\t\t\t\t\t: R$ %s\n", salarioLiquido);
     }
 }
